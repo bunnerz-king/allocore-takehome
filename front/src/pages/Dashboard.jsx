@@ -166,7 +166,7 @@ const Dashboard = () => {
                             <div
                                 key={i}
                                 onClick={() => handleClick(rootbeer)}
-                                className=" flex bg-white border border-slate-300 cursor-pointer space-x-3 hover:shadow-md transition p-3 py-5 rounded-md">
+                                className="xl:w-[70%] flex bg-white border border-slate-300 cursor-pointer space-x-3 hover:shadow-md transition p-3 py-5 rounded-md">
                                 <div className="border border-slate-300 rounded-md aspect-square overflow-hidden min-w-40 w-40 h-40 aspect-square">
                                     {rootbeer.Pictures?.[0]?.path ? <img className='w-full aspect-square object-contain' src={`${API_SERVER}${rootbeer.Pictures?.[0]?.path}`} /> : <div className="flex items-center justify-center w-full h-full aspect-sqaure text-gray-500">No Image</div>}</div>
                                 <div>
