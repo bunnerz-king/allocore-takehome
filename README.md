@@ -1,3 +1,5 @@
+NAME: Andrew King
+
 # Reviews on Tap
 
 This is a take home UI assignment to build a nice little web app for recording and rating root beers.  A backend has been provided for you.
