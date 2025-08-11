@@ -5,7 +5,7 @@ export const StarRatingDisplay = ({ value, count }) => {
   return (
     <div className="block flex items-center self-start">
     <div className="relative">
-    <div className="flex space-x-1 text-2xl">
+    <div className="flex text-2xl">
       {[1, 2, 3, 4, 5].map((star) => {
         return (
           <div
@@ -20,7 +20,7 @@ export const StarRatingDisplay = ({ value, count }) => {
       <div 
       style={{width: `${percentage}%`}}
       className={`absolute left-0 top-0
-       flex space-x-1 text-2xl overflow-hidden`}>
+       flex text-2xl overflow-hidden`}>
       {[1, 2, 3, 4, 5].map((star) => {
         return (
           <div

@@ -8,7 +8,7 @@ const ReviewsCard = ({ review }) => {
             <p className="font-semibold">{review.user_name}
                 <span className="font-normal text-gray-500 text-sm ml-2">{moment(review.createdAt).format('lll')}</span>
             </p>
-            <StarRating value={review.rating} />
+            <StarRating disabled value={review.rating} />
             <p>{review.description}</p>
         </div>
     )
