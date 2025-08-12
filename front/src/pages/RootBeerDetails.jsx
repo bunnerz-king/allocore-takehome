@@ -103,10 +103,14 @@ const RootBeerDetails = () => {
             {showAllReviews && <ReviewsModal open={showAllReviews}
                 onClose={() => setShowAllReviews(false)}
                 drinkId={drink.id} />}
-            <Modal header="Add Image" open={showCreateImage} onClose={() => setShowCreateImage(false)}>
+            <Modal header="Add Image" open={showCreateImage} onClose={() => { 
+                setFile(null);
+                setShowCreateImage(false)
+
+            }}>
                 <div className="flex-1 flex flex-col">
                     <div className="flex-1 flex flex-col items-center">
-                        <div className="flex-1 flex items-center"><ImageUploader file={file} setFile={setFile} />
+                        <div className="flex-1 w-full flex"><ImageUploader file={file} setFile={setFile} />
                         </div>
                         <Button
                             disabled={!file}
